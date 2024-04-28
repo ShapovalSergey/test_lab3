@@ -1,0 +1,1 @@
+#include "newgamecapital.h"

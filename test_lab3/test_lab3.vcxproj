@@ -121,6 +121,8 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="gamemode.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="newgamecapital.cpp" />
+    <ClCompile Include="newgamecountry.cpp" />
     <ClCompile Include="rules.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +136,9 @@
     <ClInclude Include="main.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="newgame.h" />
+    <ClInclude Include="newgamecapital.h" />
+    <ClInclude Include="newgamecountry.h" />
     <ClInclude Include="rules.h">
       <FileType>CppForm</FileType>
     </ClInclude>
