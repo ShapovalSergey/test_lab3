@@ -1,6 +1,8 @@
 #pragma once
+#pragma comment(lib, "dwmapi.lib") 
 #include "rules.h"
 #include <windows.h>
+#include <dwmapi.h>
 namespace testlab3 {
 
 	using namespace System;
@@ -25,7 +27,10 @@ namespace testlab3 {
 		main(void)
 		{
 			InitializeComponent();
-
+			BOOL attrib = TRUE;
+			HWND hWnd;
+			hWnd = static_cast<HWND>(this->Handle.ToPointer());
+			DwmSetWindowAttribute(hWnd, DWMWA_TRANSITIONS_FORCEDISABLED, &attrib, sizeof(attrib));
 			this->Closing += gcnew CancelEventHandler(this, &main::main_Closing);
 		}
 
