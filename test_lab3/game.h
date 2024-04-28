@@ -33,6 +33,15 @@ namespace testlab3 {
 			HWND hWnd;
 			hWnd = static_cast<HWND>(this->Handle.ToPointer());
 			DwmSetWindowAttribute(hWnd, DWMWA_TRANSITIONS_FORCEDISABLED, &attrib, sizeof(attrib));
+			if (capital==true)
+			{
+				title->Text = "Угадай столицу по флагу";
+			}
+			else
+			{
+				title->Text = "Угадай страну по флагу";
+			}
+
 			this->Closing += gcnew CancelEventHandler(this, &game::game_Closing);
 		}
 
@@ -59,7 +68,9 @@ namespace testlab3 {
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::Button^ gameover;
 	private: System::Windows::Forms::Button^ main_menu;
-	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Label^ title;
+	private: System::Windows::Forms::Button^ further;
+
 
 	private:
 		/// <summary>
@@ -85,7 +96,8 @@ namespace testlab3 {
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->gameover = (gcnew System::Windows::Forms::Button());
 			this->main_menu = (gcnew System::Windows::Forms::Button());
-			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->title = (gcnew System::Windows::Forms::Label());
+			this->further = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -97,9 +109,9 @@ namespace testlab3 {
 			this->label6->ForeColor = System::Drawing::SystemColors::HotTrack;
 			this->label6->Location = System::Drawing::Point(1471, 246);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(118, 32);
+			this->label6->Size = System::Drawing::Size(149, 32);
 			this->label6->TabIndex = 33;
-			this->label6->Text = L"Серия: ";
+			this->label6->Text = L"Серия: +1";
 			// 
 			// check
 			// 
@@ -111,7 +123,7 @@ namespace testlab3 {
 			this->check->Name = L"check";
 			this->check->Size = System::Drawing::Size(224, 40);
 			this->check->TabIndex = 31;
-			this->check->Text = L"Проверить (0)";
+			this->check->Text = L"Проверить (3)";
 			this->check->UseVisualStyleBackColor = false;
 			// 
 			// score
@@ -122,9 +134,9 @@ namespace testlab3 {
 			this->score->ForeColor = System::Drawing::SystemColors::HotTrack;
 			this->score->Location = System::Drawing::Point(1170, 246);
 			this->score->Name = L"score";
-			this->score->Size = System::Drawing::Size(107, 32);
+			this->score->Size = System::Drawing::Size(122, 32);
 			this->score->TabIndex = 29;
-			this->score->Text = L"СЧЁТ: ";
+			this->score->Text = L"СЧЁТ: 0";
 			// 
 			// label5
 			// 
@@ -162,7 +174,7 @@ namespace testlab3 {
 			this->hint2->Name = L"hint2";
 			this->hint2->Size = System::Drawing::Size(216, 39);
 			this->hint2->TabIndex = 26;
-			this->hint2->Text = L"Континент (0)";
+			this->hint2->Text = L"Континент (5)";
 			this->hint2->UseVisualStyleBackColor = false;
 			// 
 			// hint1
@@ -175,7 +187,7 @@ namespace testlab3 {
 			this->hint1->Name = L"hint1";
 			this->hint1->Size = System::Drawing::Size(216, 39);
 			this->hint1->TabIndex = 25;
-			this->hint1->Text = L"Первая буква (0)";
+			this->hint1->Text = L"Первая буква (5)";
 			this->hint1->UseVisualStyleBackColor = false;
 			// 
 			// textBox1
@@ -205,6 +217,7 @@ namespace testlab3 {
 			this->gameover->TabIndex = 32;
 			this->gameover->Text = L"Завершить";
 			this->gameover->UseVisualStyleBackColor = false;
+			this->gameover->Visible = false;
 			// 
 			// main_menu
 			// 
@@ -220,17 +233,30 @@ namespace testlab3 {
 			this->main_menu->UseVisualStyleBackColor = false;
 			this->main_menu->Click += gcnew System::EventHandler(this, &game::main_menu_Click);
 			// 
-			// label3
+			// title
 			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Arial", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->title->AutoSize = true;
+			this->title->Font = (gcnew System::Drawing::Font(L"Arial", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->ForeColor = System::Drawing::SystemColors::HotTrack;
-			this->label3->Location = System::Drawing::Point(789, 214);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(236, 32);
-			this->label3->TabIndex = 22;
-			this->label3->Text = L"Угадай по флагу";
+			this->title->ForeColor = System::Drawing::SystemColors::HotTrack;
+			this->title->Location = System::Drawing::Point(789, 214);
+			this->title->Name = L"title";
+			this->title->Size = System::Drawing::Size(236, 32);
+			this->title->TabIndex = 22;
+			this->title->Text = L"Угадай по флагу";
+			// 
+			// further
+			// 
+			this->further->BackColor = System::Drawing::Color::LightSteelBlue;
+			this->further->Font = (gcnew System::Drawing::Font(L"Arial", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->further->ForeColor = System::Drawing::SystemColors::HotTrack;
+			this->further->Location = System::Drawing::Point(1611, 612);
+			this->further->Name = L"further";
+			this->further->Size = System::Drawing::Size(133, 40);
+			this->further->TabIndex = 34;
+			this->further->Text = L"Дальше";
+			this->further->UseVisualStyleBackColor = false;
 			// 
 			// game
 			// 
@@ -251,7 +277,8 @@ namespace testlab3 {
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->gameover);
 			this->Controls->Add(this->main_menu);
-			this->Controls->Add(this->label3);
+			this->Controls->Add(this->title);
+			this->Controls->Add(this->further);
 			this->Name = L"game";
 			this->Text = L"Игра";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
