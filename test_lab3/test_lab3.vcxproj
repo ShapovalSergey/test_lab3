@@ -119,9 +119,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="rules.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="rules.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -326,6 +330,9 @@
   <ItemGroup>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rules.resx">
+      <DependentUpon>rules.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

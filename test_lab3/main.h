@@ -1,5 +1,6 @@
 #pragma once
-#include "windows.h"
+#include "rules.h"
+#include <windows.h>
 namespace testlab3 {
 
 	using namespace System;
@@ -96,6 +97,7 @@ namespace testlab3 {
 			this->rules->TabIndex = 6;
 			this->rules->Text = L"Правила игры";
 			this->rules->UseVisualStyleBackColor = false;
+			this->rules->Click += gcnew System::EventHandler(this, &main::rules_Click);
 			// 
 			// start_game
 			// 
@@ -130,5 +132,6 @@ namespace testlab3 {
 
 		}
 #pragma endregion
-	};
+	private: System::Void rules_Click(System::Object^ sender, System::EventArgs^ e);
+};
 }
