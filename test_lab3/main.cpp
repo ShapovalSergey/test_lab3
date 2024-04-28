@@ -16,3 +16,8 @@ System::Void main::rules_Click(System::Object^ sender, System::EventArgs^ e)
     rule->Show();
     this->Hide();
 }
+
+System::Void main::exit_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    Application::Exit();
+}

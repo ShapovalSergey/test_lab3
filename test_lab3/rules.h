@@ -17,13 +17,16 @@ namespace testlab3 {
 	public ref class rules : public System::Windows::Forms::Form
 	{
 	public:
+
+		void rules_Closing(Object^ sender, System::ComponentModel::CancelEventArgs^ e);
+
 		rules(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
+
+			this->Closing += gcnew CancelEventHandler(this, &rules::rules_Closing);
 		}
+
 
 	protected:
 		/// <summary>

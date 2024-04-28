@@ -16,12 +16,17 @@ namespace testlab3 {
 	public ref class main : public System::Windows::Forms::Form
 	{
 	public:
+
+		void main_Closing(Object^ sender, System::ComponentModel::CancelEventArgs^ e)
+		{
+			exit_Click(sender,e);
+		}
+
 		main(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
+
+			this->Closing += gcnew CancelEventHandler(this, &main::main_Closing);
 		}
 
 	protected:
@@ -84,6 +89,7 @@ namespace testlab3 {
 			this->exit->TabIndex = 4;
 			this->exit->Text = L"Выход из игры";
 			this->exit->UseVisualStyleBackColor = false;
+			this->exit->Click += gcnew System::EventHandler(this, &main::exit_Click);
 			// 
 			// rules
 			// 
@@ -133,5 +139,6 @@ namespace testlab3 {
 		}
 #pragma endregion
 	private: System::Void rules_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void exit_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }
