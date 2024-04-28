@@ -1,5 +1,6 @@
 #pragma once
 #include "main.h"
+#include "game.h"
 #include "Headers.h"
 namespace testlab3 {
 
@@ -80,6 +81,7 @@ namespace testlab3 {
 			this->mode1->TabIndex = 10;
 			this->mode1->Text = L"Государство по флагу";
 			this->mode1->UseVisualStyleBackColor = false;
+			this->mode1->Click += gcnew System::EventHandler(this, &gamemode::mode1_Click);
 			// 
 			// mode2
 			// 
@@ -93,6 +95,7 @@ namespace testlab3 {
 			this->mode2->TabIndex = 9;
 			this->mode2->Text = L"Столица по флагу";
 			this->mode2->UseVisualStyleBackColor = false;
+			this->mode2->Click += gcnew System::EventHandler(this, &gamemode::mode2_Click);
 			// 
 			// label3
 			// 
@@ -157,5 +160,7 @@ namespace testlab3 {
 	private: System::Void gamemode_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void back_Click_1(System::Object^ sender, System::EventArgs^ e);
+private: System::Void mode1_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void mode2_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }
