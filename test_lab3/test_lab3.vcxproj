@@ -118,10 +118,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="gamemode.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="rules.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="gamemode.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Headers.h" />
     <ClInclude Include="main.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -328,6 +333,9 @@
     <Image Include="flags\99.png" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="gamemode.resx">
+      <DependentUpon>gamemode.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.h</DependentUpon>
     </EmbeddedResource>

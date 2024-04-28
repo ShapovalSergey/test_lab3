@@ -1,8 +1,6 @@
 #pragma once
-#pragma comment(lib, "dwmapi.lib") 
 #include "main.h"
-#include <windows.h>
-#include <dwmapi.h>
+#include "Headers.h"
 
 namespace testlab3 {
 

@@ -21,3 +21,10 @@ System::Void main::exit_Click(System::Object^ sender, System::EventArgs^ e)
 {
     Application::Exit();
 }
+
+System::Void main::start_game_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    testlab3::gamemode^ gm = gcnew testlab3::gamemode();
+    gm->Show();
+    this->Hide();
+}

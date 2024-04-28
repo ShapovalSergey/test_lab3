@@ -1,8 +1,7 @@
 #pragma once
-#pragma comment(lib, "dwmapi.lib") 
 #include "rules.h"
-#include <windows.h>
-#include <dwmapi.h>
+#include "gamemode.h"
+#include "Headers.h"
 namespace testlab3 {
 
 	using namespace System;
@@ -122,6 +121,7 @@ namespace testlab3 {
 			this->start_game->TabIndex = 5;
 			this->start_game->Text = L"Начать игру";
 			this->start_game->UseVisualStyleBackColor = false;
+			this->start_game->Click += gcnew System::EventHandler(this, &main::start_game_Click);
 			// 
 			// main
 			// 
@@ -145,5 +145,6 @@ namespace testlab3 {
 #pragma endregion
 	private: System::Void rules_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void exit_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void start_game_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }
