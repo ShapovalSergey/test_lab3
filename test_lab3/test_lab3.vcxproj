@@ -323,6 +323,11 @@
     <Image Include="flags\98.png" />
     <Image Include="flags\99.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
