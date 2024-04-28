@@ -24,4 +24,594 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="flags\1.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\2.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\3.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\4.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\5.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\6.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\7.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\8.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\9.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\10.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\11.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\12.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\13.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\14.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\15.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\16.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\17.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\18.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\19.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\20.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\21.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\22.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\23.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\24.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\25.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\26.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\27.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\28.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\29.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\30.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\31.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\32.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\33.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\34.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\35.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\36.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\37.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\38.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\39.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\40.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\41.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\42.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\43.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\44.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\45.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\46.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\47.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\48.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\49.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\50.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\51.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\52.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\53.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\54.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\55.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\56.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\57.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\58.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\59.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\60.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\61.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\62.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\63.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\64.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\65.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\66.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\67.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\68.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\69.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\70.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\71.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\72.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\73.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\74.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\75.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\76.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\77.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\78.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\79.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\80.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\81.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\82.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\83.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\84.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\85.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\86.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\87.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\88.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\89.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\90.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\91.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\92.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\93.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\94.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\95.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\96.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\97.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\98.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\99.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\100.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\101.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\102.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\103.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\104.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\105.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\106.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\107.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\108.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\109.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\110.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\111.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\112.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\113.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\114.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\115.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\116.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\117.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\118.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\119.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\120.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\121.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\122.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\123.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\124.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\125.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\126.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\127.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\128.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\129.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\130.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\131.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\132.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\133.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\134.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\135.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\136.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\137.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\138.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\139.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\140.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\141.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\142.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\143.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\144.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\145.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\146.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\147.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\148.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\149.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\150.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\151.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\152.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\153.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\154.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\155.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\156.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\157.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\158.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\159.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\160.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\161.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\162.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\163.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\164.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\165.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\166.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\167.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\168.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\169.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\170.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\171.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\172.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\173.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\174.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\175.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\176.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\177.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\178.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\179.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\180.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\181.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\182.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\183.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\184.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\185.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\186.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\187.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\188.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\189.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\190.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\191.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\192.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\193.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\194.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\195.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="flags\196.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
