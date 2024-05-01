@@ -1,6 +1,7 @@
 #pragma once
 #include "main.h"
-#include "newgame.h"
+#include "newgamecapital.h"
+#include "newgamecountry.h"
 #include "Headers.h"
 namespace testlab3 {
 
@@ -37,11 +38,12 @@ namespace testlab3 {
 			if (capital==true)
 			{
 				title->Text = "”гадай столицу по флагу";
-				
+				ng = new newgamecapital();
 			}
 			else
 			{
 				title->Text = "”гадай страну по флагу";
+				ng = new newgamecountry();
 			}
 
 			this->Closing += gcnew CancelEventHandler(this, &game::game_Closing);
@@ -290,7 +292,7 @@ namespace testlab3 {
 
 		}
 #pragma endregion
-	private: newgame ^ng;
+	private: newgame *ng;
 	private: System::Void main_menu_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }
