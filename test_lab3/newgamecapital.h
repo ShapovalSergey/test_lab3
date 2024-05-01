@@ -5,9 +5,9 @@ class newgamecapital :
 {
 public:
 	newgamecapital() { };
-	string getFlagAnswer();
-	char getFlagHintLetter();
-	string getFlagHintLocation();
+	string getFlagAnswer(int flag);
+	char getFlagHintLetter(int flag);
+	string getFlagHintLocation(int flag);
 	int getFlagId();
 };
 

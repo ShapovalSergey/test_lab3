@@ -19,15 +19,15 @@ int newgamecountry::getFlagId()
 	}
 	return flag;
 }
-string newgamecountry::getFlagAnswer()
+string newgamecountry::getFlagAnswer(int flag)
 {
 	return "";
 }
-char newgamecountry::getFlagHintLetter()
+char newgamecountry::getFlagHintLetter(int flag)
 {
 	return 'c';
 }
-string newgamecountry::getFlagHintLocation()
+string newgamecountry::getFlagHintLocation(int flag)
 {
 	return "";
 }

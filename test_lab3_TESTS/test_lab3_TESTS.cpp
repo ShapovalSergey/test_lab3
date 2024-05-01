@@ -1,4 +1,5 @@
 #include "pch.h"
+#define _CRT_SECURE_NO_WARNINGS
 #include "CppUnitTest.h"
 #include "../test_lab3/newgamecapital.cpp"
 #include "../test_lab3/Headers.h"
@@ -23,11 +24,44 @@ namespace testlab3TESTS
 
 			for (int i = 0; i < n; i++)
 			{
-				for (int j = 1; j+i < n; j++)
+				for (int j = 1; j + i < n; j++)
 				{
-					Assert::AreNotEqual(flags[i],flags[i+j]);
+					Assert::AreNotEqual(flags[i], flags[i + j]);
 				}
 			}
 		}
+
+		TEST_METHOD(CheckFlagStart)
+		{
+			newgamecapital ngc;
+			string answer = "Абхазия";
+			Assert::AreEqual(ngc.getFlagAnswer(1), answer);
+		}
+		TEST_METHOD(CheckFlagEnd)
+		{
+			newgamecapital ngc;
+			string answer = "Япония";
+			Assert::AreEqual(ngc.getFlagAnswer(196), answer);
+		}
+		TEST_METHOD(CheckFlagMid1)
+		{
+			newgamecapital ngc;
+			string answer = "Антигуа_и_Барбуда";
+			Assert::AreEqual(ngc.getFlagAnswer(9), answer);
+		}
+		TEST_METHOD(CheckFlagMid2)
+		{
+			newgamecapital ngc;
+			string answer = "Россия";
+			Assert::AreEqual(ngc.getFlagAnswer(133), answer);
+		}
+		TEST_METHOD(CheckFlagMid3)
+		{
+			newgamecapital ngc;
+			string answer = "Сан-Томе_и_Принсипи";
+			Assert::AreEqual(ngc.getFlagAnswer(139), answer);
+		}
+
+
 	};
 }

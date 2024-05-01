@@ -14,9 +14,9 @@ protected:
 	vector <int> usedFlags;
 public:
 	newgame() {};
-	virtual string getFlagAnswer() = 0;
-	virtual char getFlagHintLetter() = 0;
-	virtual string getFlagHintLocation() = 0;
+	virtual string getFlagAnswer(int flag) = 0;
+	virtual char getFlagHintLetter(int flag) = 0;
+	virtual string getFlagHintLocation(int flag) = 0;
 	virtual int getFlagId() = 0;
 	vector <int> getUsedFlags() { return this->usedFlags; };
 	void addUsedFlag(int flag) { this->usedFlags.push_back(flag); };

@@ -22,15 +22,20 @@ int newgamecapital::getFlagId()
 	addUsedFlag(flag);
 	return flag;
 }
-string newgamecapital::getFlagAnswer()
+string newgamecapital::getFlagAnswer(int flag)
 {
-	return "";
+	char otvet[30];
+	FILE* p = fopen("capitals.txt", "r");
+	fseek(p, (flag - 1) * 30, SEEK_SET);
+	fgets(otvet, 30, p);
+	fclose(p);
+	return otvet;
 }
-char newgamecapital::getFlagHintLetter()
+char newgamecapital::getFlagHintLetter(int flag)
 {
 	return 'c';
 }
-string newgamecapital::getFlagHintLocation()
+string newgamecapital::getFlagHintLocation(int flag)
 {
 	return "";
 }
