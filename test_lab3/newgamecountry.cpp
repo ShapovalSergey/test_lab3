@@ -23,9 +23,9 @@ string newgamecountry::getFlagAnswer(int flag)
 {
 	return "";
 }
-char newgamecountry::getFlagHintLetter(int flag)
+string newgamecountry::getFlagHintLetter(int flag)
 {
-	return 'c';
+	return "";
 }
 string newgamecountry::getFlagHintLocation(int flag)
 {

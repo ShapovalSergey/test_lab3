@@ -33,9 +33,39 @@ string newgamecapital::getFlagAnswer(int flag)
 	result = strtok(otvet," ");
 	return result;
 }
-char newgamecapital::getFlagHintLetter(int flag)
+string newgamecapital::getFlagHintLetter(int flag)
 {
-	return 'c';
+	char a[2];
+	string result;
+	FILE* p = fopen("hints.txt", "r");
+	fseek(p, (flag - 1) * 2, SEEK_SET);
+	fgets(a, 2, p);
+	fclose(p);
+	if (a[0] == '1')
+	{
+		result = "Европа";
+	}
+	else if (a[0] == '2')
+	{
+		result = "Северная америка";
+	}
+	else if (a[0] == '3')
+	{
+		result = "Южная америка";
+	}
+	else if (a[0] == '4')
+	{
+		result = "Азия";
+	}
+	else if (a[0] == '5')
+	{
+		result = "Африка";
+	}
+	else if (a[0] == '6')
+	{
+		result = "Океания";
+	}
+	return result;
 }
 string newgamecapital::getFlagHintLocation(int flag)
 {

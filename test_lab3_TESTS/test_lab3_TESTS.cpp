@@ -60,9 +60,40 @@ namespace testlab3TESTS
 			newgamecapital ngc;
 			string answer = "Сан-Томе";
 			Assert::AreEqual(ngc.getFlagAnswer(139), answer);
-			
 		}
 
+
+
+		TEST_METHOD(CheckFlagLocationStart)
+		{
+			newgamecapital ngc;
+			string answer = "Азия";
+			Assert::AreEqual(ngc.getFlagAnswer(1), answer);
+		}
+		TEST_METHOD(CheckFlagLocationEnd)
+		{
+			newgamecapital ngc;
+			string answer = "Азия";
+			Assert::AreEqual(ngc.getFlagAnswer(196), answer);
+		}
+		TEST_METHOD(CheckFlagLocationMid1)
+		{
+			newgamecapital ngc;
+			string answer = "Северная америка";
+			Assert::AreEqual(ngc.getFlagAnswer(9), answer);
+		}
+		TEST_METHOD(CheckFlagLocationMid2)
+		{
+			newgamecapital ngc;
+			string answer = "Европа";
+			Assert::AreEqual(ngc.getFlagAnswer(133), answer);
+		}
+		TEST_METHOD(CheckFlagLocationMid3)
+		{
+			newgamecapital ngc;
+			string answer = "Африка";
+			Assert::AreEqual(ngc.getFlagAnswer(139), answer);
+		}
 
 	};
 }
