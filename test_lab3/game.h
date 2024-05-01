@@ -198,6 +198,7 @@ namespace testlab3 {
 			this->hint1->TabIndex = 25;
 			this->hint1->Text = L"Первая буква (5)";
 			this->hint1->UseVisualStyleBackColor = false;
+			this->hint1->Click += gcnew System::EventHandler(this, &game::hint1_Click);
 			// 
 			// textBox1
 			// 
@@ -301,5 +302,6 @@ namespace testlab3 {
 	private: System::Void main_menu_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void game_Load(System::Object^ sender, System::EventArgs^ e);
 private: System::Void check_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void hint1_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }

@@ -23,6 +23,8 @@ public:
 	void setCheckAnswer(int newCheckAnswer) { this->checkAnswer = newCheckAnswer; };
 	int getStreak() { return this->streak; };
 	void setStreak(int newStreak) { this->streak = newStreak; };
+	int gethintLetter() { return this->hintLetter; };
+	void sethintLetter(int newhintLetter) { this->hintLetter = newhintLetter; };
 	~newgame() {};
 };
 

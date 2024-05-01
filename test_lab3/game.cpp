@@ -48,3 +48,18 @@ System::Void testlab3::game::check_Click(System::Object^ sender, System::EventAr
 		check->Enabled = false;
 	}
 }
+
+System::Void testlab3::game::hint1_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	ng->sethintLetter(ng->gethintLetter()-1);
+	hint1->Enabled = false;
+	hint1->Text = "Первая буква (" + ng->gethintLetter() + ")";
+	label4->Visible = true;
+	System::String^ stro; stro = gcnew String(ng->getFlagAnswer(currentFlagID).c_str());
+	label4->Text = "Первая буква - " + stro[0];
+	if ((hint1->Enabled == false) && (hint2->Enabled == false))
+	{
+		label6->Text = "Серия: +1";
+		ng->setStreak(1);
+	}
+}
