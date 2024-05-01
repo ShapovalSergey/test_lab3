@@ -229,6 +229,7 @@ namespace testlab3 {
 			this->gameover->Text = L"Завершить";
 			this->gameover->UseVisualStyleBackColor = false;
 			this->gameover->Visible = false;
+			this->gameover->Click += gcnew System::EventHandler(this, &game::gameover_Click);
 			// 
 			// main_menu
 			// 
@@ -289,8 +290,8 @@ namespace testlab3 {
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->main_menu);
 			this->Controls->Add(this->title);
-			this->Controls->Add(this->further);
 			this->Controls->Add(this->gameover);
+			this->Controls->Add(this->further);
 			this->Name = L"game";
 			this->Text = L"Игра";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
@@ -307,5 +308,6 @@ private: System::Void check_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void hint1_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void hint2_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void further_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void gameover_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }

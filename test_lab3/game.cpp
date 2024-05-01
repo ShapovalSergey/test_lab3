@@ -145,3 +145,26 @@ System::Void testlab3::game::further_Click(System::Object^ sender, System::Event
 	score->Text = "Счёт: "+ng->getGamescore();
 	label6->Text = "Серия: +" + ng->getStreak();
 }
+
+System::Void testlab3::game::gameover_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	msclr::interop::marshal_context context;
+	const char* slo = context.marshal_as<const char*>(textBox1->Text);
+	char slovo[50];
+	strcpy(slovo, slo);
+	if (strcmp(slovo, ng->getFlagAnswer(currentFlagID).c_str()) == 0)
+	{
+		if ((hint1->Enabled == false) && (hint2->Enabled == false))
+		{
+			ng->setStreak(1);
+			ng->addGamescore(ng->getStreak());
+		}
+		else
+		{
+			ng->addGamescore(ng->getStreak());
+			ng->addStreak();
+		}
+	} 
+	MessageBox::Show("Количество очков, которое вы набрали  = " + ng->getGamescore(), "Игра окончена", MessageBoxButtons::OKCancel, MessageBoxIcon::Asterisk);
+	this->Close();
+}
