@@ -153,7 +153,7 @@ namespace testlab3 {
 			this->label5->Font = (gcnew System::Drawing::Font(L"Arial", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label5->ForeColor = System::Drawing::SystemColors::HotTrack;
-			this->label5->Location = System::Drawing::Point(1471, 425);
+			this->label5->Location = System::Drawing::Point(1432, 425);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(81, 64);
 			this->label5->TabIndex = 28;
@@ -185,6 +185,7 @@ namespace testlab3 {
 			this->hint2->TabIndex = 26;
 			this->hint2->Text = L"Континент (5)";
 			this->hint2->UseVisualStyleBackColor = false;
+			this->hint2->Click += gcnew System::EventHandler(this, &game::hint2_Click);
 			// 
 			// hint1
 			// 
@@ -303,5 +304,6 @@ namespace testlab3 {
 private: System::Void game_Load(System::Object^ sender, System::EventArgs^ e);
 private: System::Void check_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void hint1_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void hint2_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }

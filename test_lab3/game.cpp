@@ -63,3 +63,18 @@ System::Void testlab3::game::hint1_Click(System::Object^ sender, System::EventAr
 		ng->setStreak(1);
 	}
 }
+
+System::Void testlab3::game::hint2_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	ng->sethintLocation(ng->gethintLocation() - 1);
+	hint2->Enabled = false;
+	hint2->Text = "Континент (" + ng->gethintLocation() + ")";
+	label5->Visible = true;
+	System::String^ stro; stro = gcnew String(ng->getFlagHintLocation(currentFlagID).c_str());
+	label5->Text = stro;
+	if ((hint1->Enabled == false) && (hint2->Enabled == false))
+	{
+		label6->Text = "Серия: +1";
+		ng->setStreak(1);
+	}
+}

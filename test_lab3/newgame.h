@@ -25,6 +25,8 @@ public:
 	void setStreak(int newStreak) { this->streak = newStreak; };
 	int gethintLetter() { return this->hintLetter; };
 	void sethintLetter(int newhintLetter) { this->hintLetter = newhintLetter; };
+	int gethintLocation() { return this->hintLocation; };
+	void sethintLocation(int newhintLocation) { this->hintLocation = newhintLocation; };
 	~newgame() {};
 };
 
