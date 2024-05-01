@@ -2,6 +2,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "CppUnitTest.h"
 #include "../test_lab3/newgamecapital.cpp"
+#include "../test_lab3/newgamecountry.cpp"
 #include "../test_lab3/Headers.h"
 #include "../test_lab3/newgame.h"
 
@@ -93,6 +94,39 @@ namespace testlab3TESTS
 			newgamecapital ngc;
 			string answer = "Африка";
 			Assert::AreEqual(answer, ngc.getFlagHintLocation(139));
+		}
+
+
+
+		TEST_METHOD(CheckCountryStart)
+		{
+			newgamecountry ngc;
+			string answer = "Абхазия";
+			Assert::AreEqual(ngc.getFlagAnswer(1), answer);
+		}
+		TEST_METHOD(CheckCountryEnd)
+		{
+			newgamecountry ngc;
+			string answer = "Япония";
+			Assert::AreEqual(ngc.getFlagAnswer(196), answer);
+		}
+		TEST_METHOD(CheckCountryMid1)
+		{
+			newgamecountry ngc;
+			string answer = "Антигуа_и_Барбуда";
+			Assert::AreEqual(ngc.getFlagAnswer(9), answer);
+		}
+		TEST_METHOD(CheckCountryMid2)
+		{
+			newgamecountry ngc;
+			string answer = "Россия";
+			Assert::AreEqual(ngc.getFlagAnswer(133), answer);
+		}
+		TEST_METHOD(CheckCountryMid3)
+		{
+			newgamecountry ngc;
+			string answer = "Сан-Томе_и_Принсипи";
+			Assert::AreEqual(ngc.getFlagAnswer(139), answer);
 		}
 
 	};

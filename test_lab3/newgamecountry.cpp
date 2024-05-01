@@ -21,7 +21,14 @@ int newgamecountry::getFlagId()
 }
 string newgamecountry::getFlagAnswer(int flag)
 {
-	return "";
+	char otvet[30];
+	string result;
+	FILE* p = fopen("D:\\projects\\test_lab3\\test_lab3\\countries.txt", "r");
+	fseek(p, (flag - 1) * 30, SEEK_SET);
+	fgets(otvet, 30, p);
+	fclose(p);
+	result = strtok(otvet, " ");
+	return result;
 }
 string newgamecountry::getFlagHintLocation(int flag)
 {
