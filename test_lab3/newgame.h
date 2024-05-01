@@ -19,6 +19,7 @@ public:
 	virtual string getFlagHintLocation() = 0;
 	virtual int getFlagId() = 0;
 	vector <int> getUsedFlags() { return this->usedFlags; };
+	void addUsedFlag(int flag) { this->usedFlags.push_back(flag); };
 	~newgame() {};
 };
 

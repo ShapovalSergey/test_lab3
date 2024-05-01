@@ -19,6 +19,7 @@ int newgamecapital::getFlagId()
 			}
 		}
 	}
+	addUsedFlag(flag);
 	return flag;
 }
 string newgamecapital::getFlagAnswer()
