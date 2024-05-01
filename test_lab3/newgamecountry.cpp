@@ -17,6 +17,7 @@ int newgamecountry::getFlagId()
 			}
 		}
 	}
+	addUsedFlag(flag);
 	return flag;
 }
 string newgamecountry::getFlagAnswer(int flag)

@@ -34,12 +34,21 @@ System::Void testlab3::game::check_Click(System::Object^ sender, System::EventAr
 		if ((hint1->Enabled == false) && (hint2->Enabled == false))
 		{
 			ng->setStreak(1);
+			label6->Text = "Серия: +1";
 		}
 		else 
 		{
 			hint1->Enabled = false;
 			hint2->Enabled = false;
 		}
+	}
+	else
+	{
+		check->Text = "Неверно";
+		check->Enabled = false;
+		Application::DoEvents();
+		Sleep(1500);
+		check->Enabled = true;
 	}
 	ng->setCheckAnswer(ng->getCheckAnswer()-1);
 	check->Text = "Проверить ("+ ng->getCheckAnswer() +")";
@@ -77,4 +86,62 @@ System::Void testlab3::game::hint2_Click(System::Object^ sender, System::EventAr
 		label6->Text = "Серия: +1";
 		ng->setStreak(1);
 	}
+}
+
+System::Void testlab3::game::further_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	msclr::interop::marshal_context context;
+	const char* slo = context.marshal_as<const char*>(textBox1->Text);
+	char slovo[50];
+	ng->addTurn();
+	ng->setCheckAnswer(3);
+	textBox1->Enabled = true;
+	check->Enabled = true;
+	label4->Visible = false;
+	label5->Visible = false;
+	check->Text = "Проверить (" + ng->getCheckAnswer() + ")";
+	if (ng->getTurn()==20)
+	{
+		further->Visible = false;
+		gameover->Visible = true;
+	}
+	if (ng->gethintLetter() == 0)
+	{
+		hint1->Enabled = false;
+	}
+	else
+	{
+		hint1->Enabled = true;
+	}
+	if (ng->gethintLocation() == 0)
+	{
+		hint2->Enabled = false;
+	}
+	else
+	{
+		hint2->Enabled = true;
+	}
+	strcpy(slovo, slo);
+	if (strcmp(slovo, ng->getFlagAnswer(currentFlagID).c_str()) == 0)
+	{
+		if ((hint1->Enabled == false) && (hint2->Enabled == false))
+		{
+			ng->setStreak(1);
+			ng->addGamescore(ng->getStreak());
+		}
+		else
+		{
+			ng->addGamescore(ng->getStreak());
+			ng->addStreak();
+		}
+	}
+	else
+	{
+		ng->setStreak(1);
+	}
+	currentFlagID = ng->getFlagId();
+	pictureBox1->Image = System::Drawing::Bitmap::FromFile("D:\\projects\\test_lab3\\test_lab3\\flags\\" + currentFlagID + ".png");
+	textBox1->Text = "";
+	score->Text = "Счёт: "+ng->getGamescore();
+	label6->Text = "Серия: +" + ng->getStreak();
 }

@@ -23,6 +23,11 @@ public:
 	void setCheckAnswer(int newCheckAnswer) { this->checkAnswer = newCheckAnswer; };
 	int getStreak() { return this->streak; };
 	void setStreak(int newStreak) { this->streak = newStreak; };
+	void addStreak() { this->streak += 1; };
+	int getGamescore() { return this->gamescore; };
+	void addGamescore(int addGamescore) { this->gamescore += addGamescore; };
+	int getTurn() { return this->turn; };
+	void addTurn() { this->turn += 1; };
 	int gethintLetter() { return this->hintLetter; };
 	void sethintLetter(int newhintLetter) { this->hintLetter = newhintLetter; };
 	int gethintLocation() { return this->hintLocation; };

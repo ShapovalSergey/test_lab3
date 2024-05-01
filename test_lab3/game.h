@@ -143,9 +143,9 @@ namespace testlab3 {
 			this->score->ForeColor = System::Drawing::SystemColors::HotTrack;
 			this->score->Location = System::Drawing::Point(1170, 246);
 			this->score->Name = L"score";
-			this->score->Size = System::Drawing::Size(122, 32);
+			this->score->Size = System::Drawing::Size(111, 32);
 			this->score->TabIndex = 29;
-			this->score->Text = L"Ñ×¨Ò: 0";
+			this->score->Text = L"Ñ÷¸ò: 0";
 			// 
 			// label5
 			// 
@@ -268,6 +268,7 @@ namespace testlab3 {
 			this->further->TabIndex = 34;
 			this->further->Text = L"Äàëüøå";
 			this->further->UseVisualStyleBackColor = false;
+			this->further->Click += gcnew System::EventHandler(this, &game::further_Click);
 			// 
 			// game
 			// 
@@ -286,10 +287,10 @@ namespace testlab3 {
 			this->Controls->Add(this->hint1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->pictureBox1);
-			this->Controls->Add(this->gameover);
 			this->Controls->Add(this->main_menu);
 			this->Controls->Add(this->title);
 			this->Controls->Add(this->further);
+			this->Controls->Add(this->gameover);
 			this->Name = L"game";
 			this->Text = L"Èãðà";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
@@ -305,5 +306,6 @@ private: System::Void game_Load(System::Object^ sender, System::EventArgs^ e);
 private: System::Void check_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void hint1_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void hint2_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void further_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }
