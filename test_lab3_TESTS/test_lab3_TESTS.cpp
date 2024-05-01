@@ -34,32 +34,33 @@ namespace testlab3TESTS
 		TEST_METHOD(CheckFlagStart)
 		{
 			newgamecapital ngc;
-			string answer = "Абхазия";
+			string answer = "Сухум";
 			Assert::AreEqual(ngc.getFlagAnswer(1), answer);
 		}
 		TEST_METHOD(CheckFlagEnd)
 		{
 			newgamecapital ngc;
-			string answer = "Япония";
+			string answer = "Токио";
 			Assert::AreEqual(ngc.getFlagAnswer(196), answer);
 		}
 		TEST_METHOD(CheckFlagMid1)
 		{
 			newgamecapital ngc;
-			string answer = "Антигуа_и_Барбуда";
+			string answer = "Сент-Джонс";
 			Assert::AreEqual(ngc.getFlagAnswer(9), answer);
 		}
 		TEST_METHOD(CheckFlagMid2)
 		{
 			newgamecapital ngc;
-			string answer = "Россия";
+			string answer = "Москва";
 			Assert::AreEqual(ngc.getFlagAnswer(133), answer);
 		}
 		TEST_METHOD(CheckFlagMid3)
 		{
 			newgamecapital ngc;
-			string answer = "Сан-Томе_и_Принсипи";
+			string answer = "Сан-Томе";
 			Assert::AreEqual(ngc.getFlagAnswer(139), answer);
+			
 		}
 
 

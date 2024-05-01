@@ -25,11 +25,13 @@ int newgamecapital::getFlagId()
 string newgamecapital::getFlagAnswer(int flag)
 {
 	char otvet[30];
-	FILE* p = fopen("capitals.txt", "r");
+	string result;
+	FILE* p = fopen("D:\\projects\\test_lab3\\test_lab3\\capitals.txt", "r");
 	fseek(p, (flag - 1) * 30, SEEK_SET);
 	fgets(otvet, 30, p);
 	fclose(p);
-	return otvet;
+	result = strtok(otvet," ");
+	return result;
 }
 char newgamecapital::getFlagHintLetter(int flag)
 {

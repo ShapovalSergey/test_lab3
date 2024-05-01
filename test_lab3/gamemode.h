@@ -157,8 +157,7 @@ namespace testlab3 {
 
 		}
 #pragma endregion
-	private: System::Void gamemode_Load(System::Object^ sender, System::EventArgs^ e) {
-	}
+	private: System::Void gamemode_Load(System::Object^ sender, System::EventArgs^ e) { setlocale(LC_ALL, "Russian"); }
 	private: System::Void back_Click_1(System::Object^ sender, System::EventArgs^ e);
 private: System::Void mode1_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void mode2_Click(System::Object^ sender, System::EventArgs^ e);
