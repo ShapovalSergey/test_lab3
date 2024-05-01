@@ -15,7 +15,6 @@ protected:
 public:
 	newgame() {};
 	virtual string getFlagAnswer(int flag) = 0;
-	virtual string getFlagHintLetter(int flag) = 0;
 	virtual string getFlagHintLocation(int flag) = 0;
 	virtual int getFlagId() = 0;
 	vector <int> getUsedFlags() { return this->usedFlags; };

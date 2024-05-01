@@ -23,10 +23,6 @@ string newgamecountry::getFlagAnswer(int flag)
 {
 	return "";
 }
-string newgamecountry::getFlagHintLetter(int flag)
-{
-	return "";
-}
 string newgamecountry::getFlagHintLocation(int flag)
 {
 	return "";

@@ -67,7 +67,3 @@ string newgamecapital::getFlagHintLocation(int flag)
 	}
 	return result;
 }
-string newgamecapital::getFlagHintLetter(int flag)
-{
-	return "";
-}
