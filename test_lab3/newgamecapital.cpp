@@ -37,7 +37,7 @@ string newgamecapital::getFlagHintLetter(int flag)
 {
 	char a[2];
 	string result;
-	FILE* p = fopen("hints.txt", "r");
+	FILE* p = fopen("D:\\projects\\test_lab3\\test_lab3\\hints.txt", "r");
 	fseek(p, (flag - 1) * 2, SEEK_SET);
 	fgets(a, 2, p);
 	fclose(p);

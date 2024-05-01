@@ -68,31 +68,31 @@ namespace testlab3TESTS
 		{
 			newgamecapital ngc;
 			string answer = "Азия";
-			Assert::AreEqual(ngc.getFlagHintLocation(1), answer);
+			Assert::AreEqual(answer, ngc.getFlagHintLocation(1));
 		}
 		TEST_METHOD(CheckFlagLocationEnd)
 		{
 			newgamecapital ngc;
 			string answer = "Азия";
-			Assert::AreEqual(ngc.getFlagHintLocation(196), answer);
+			Assert::AreEqual(answer, ngc.getFlagHintLocation(196));
 		}
 		TEST_METHOD(CheckFlagLocationMid1)
 		{
 			newgamecapital ngc;
 			string answer = "Северная америка";
-			Assert::AreEqual(ngc.getFlagHintLocation(9), answer);
+			Assert::AreEqual(answer, ngc.getFlagHintLocation(9));
 		}
 		TEST_METHOD(CheckFlagLocationMid2)
 		{
 			newgamecapital ngc;
 			string answer = "Европа";
-			Assert::AreEqual(ngc.getFlagHintLocation(133), answer);
+			Assert::AreEqual(answer, ngc.getFlagHintLocation(133));
 		}
 		TEST_METHOD(CheckFlagLocationMid3)
 		{
 			newgamecapital ngc;
 			string answer = "Африка";
-			Assert::AreEqual(ngc.getFlagHintLocation(139), answer);
+			Assert::AreEqual(answer, ngc.getFlagHintLocation(139));
 		}
 
 	};
