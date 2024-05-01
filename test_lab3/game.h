@@ -50,6 +50,10 @@ namespace testlab3 {
 		}
 
 	protected:
+		newgame* ng;
+		bool capital;
+		int currentFlagID;
+
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
@@ -129,6 +133,7 @@ namespace testlab3 {
 			this->check->TabIndex = 31;
 			this->check->Text = L"Проверить (3)";
 			this->check->UseVisualStyleBackColor = false;
+			this->check->Click += gcnew System::EventHandler(this, &game::check_Click);
 			// 
 			// score
 			// 
@@ -286,13 +291,15 @@ namespace testlab3 {
 			this->Name = L"game";
 			this->Text = L"Игра";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
+			this->Load += gcnew System::EventHandler(this, &game::game_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-	private: newgame *ng;
 	private: System::Void main_menu_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void game_Load(System::Object^ sender, System::EventArgs^ e);
+private: System::Void check_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }

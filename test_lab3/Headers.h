@@ -4,8 +4,8 @@
 #include <windows.h>
 #include <stdio.h>
 #include <dwmapi.h>
-//#include <msclr\marshal.h>
-//#include <msclr/marshal_cppstd.h>
+#include <msclr\marshal.h>
+#include <msclr/marshal_cppstd.h>
 #include <time.h>
 #include <string>
 #include <random>

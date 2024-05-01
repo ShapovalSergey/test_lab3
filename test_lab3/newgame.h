@@ -19,6 +19,10 @@ public:
 	virtual int getFlagId() = 0;
 	vector <int> getUsedFlags() { return this->usedFlags; };
 	void addUsedFlag(int flag) { this->usedFlags.push_back(flag); };
+	int getCheckAnswer() { return this->checkAnswer; };
+	void setCheckAnswer(int newCheckAnswer) { this->checkAnswer = newCheckAnswer; };
+	int getStreak() { return this->streak; };
+	void setStreak(int newStreak) { this->streak = newStreak; };
 	~newgame() {};
 };
 
