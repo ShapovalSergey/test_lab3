@@ -33,7 +33,7 @@ string newgamecapital::getFlagAnswer(int flag)
 	result = strtok(otvet," ");
 	return result;
 }
-string newgamecapital::getFlagHintLetter(int flag)
+string newgamecapital::getFlagHintLocation(int flag)
 {
 	char a[2];
 	string result;
@@ -67,7 +67,7 @@ string newgamecapital::getFlagHintLetter(int flag)
 	}
 	return result;
 }
-string newgamecapital::getFlagHintLocation(int flag)
+string newgamecapital::getFlagHintLetter(int flag)
 {
 	return "";
 }
